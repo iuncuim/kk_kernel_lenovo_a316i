@@ -62,18 +62,21 @@
 #endif
 
 
-
-
-//i2c id for sensor device, MT8320_fpga, the I2C is attached on 1
-#define IMG_SENSOR_I2C_GROUP_ID 0
-
-
-//i2c id for sensor device, MT8320_fpga, the I2C is attached on 1
-#define IMG_SENSOR_I2C_GROUP_ID 0
-
-#define A60373_WRITE_ID (0xC0)
-#define A60373_READ_ID (0xC1)
 */
+
+//i2c id for sensor device, MT8320_fpga, the I2C is attached on 1
+#define IMG_SENSOR_I2C_GROUP_ID 0
+
+
+//i2c id for sensor device, MT8320_fpga, the I2C is attached on 1
+#define IMG_SENSOR_I2C_GROUP_ID 0
+
+//#define A60373_WRITE_ID (0xC0)
+//#define A60373_READ_ID (0xC1)
+
+#define OV2659_WRITE_ID (0x60)
+#define OV2659_READ_ID (0x61)
+
 
 
 #endif 
