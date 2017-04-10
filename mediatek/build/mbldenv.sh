@@ -10,6 +10,9 @@ export JAVA_HOME
 ANDROID_JAVA_HOME=/mtkoss/jdk/1.6.0_45-ubuntu-10.04/x86_64
 export ANDROID_JAVA_HOME
 
+CROSS_COMPILE=~/work/a316i/tools/arm-eabi-4.6/bin/arm-eabi-
+export CROSS_COMPILE
+
 # Overwrite PATH environment setting for JDK & arm-eabi if already exists
 PATH=/mtkoss/jdk/1.6.0_45-ubuntu-10.04/x86_64/bin:$PWD/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7/bin:$PWD/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin:$PWD/prebuilts/misc/linux-x86/make:$PATH
 export PATH
