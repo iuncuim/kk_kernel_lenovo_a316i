@@ -38,10 +38,26 @@
 #ifndef TOUCHPANEL_H
 #define TOUCHPANEL_H
 
+/* Pre-defined definition */
+#define TPD_TYPE_CAPACITIVE
+#define TPD_TYPE_RESISTIVE
+#define TPD_POWER_SOURCE         MT6323_POWER_LDO_VGP1
+#define TPD_WAKEUP_TRIAL         60
+#define TPD_WAKEUP_DELAY         100
+
+#define TPD_DELAY                (2*HZ/100)
+
+#define TPD_HAVE_TREMBLE_ELIMINATION
+
+#define TPD_HAVE_POWER_ON_OFF
+
+#define PRESSURE_FACTOR	10
+
 #define MS_TS_MSG21XX_X_MAX               480
 #define MS_TS_MSG21XX_Y_MAX               800
 
 #define TPD_HAVE_BUTTON
+//#define TPD_PROXIMITY1
 
 #define TPD_BUTTON_HEIGHT		100
 #define TPD_KEY_COUNT           3
@@ -51,7 +67,7 @@
 #define TPD_I2C_NUMBER			1
 
 #define	REPORT_PACKET_LENGTH	8
-#define	REVERSE_Y				1
+#define	TPD_Y_INVERT				1
 //#define	REVERSE_X			1
 //#define	SWAP_X_Y				1
 //#define TPD_CLOSE_POWER_IN_SLEEP
